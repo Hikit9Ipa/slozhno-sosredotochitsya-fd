@@ -1,20 +1,26 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  font-family: "IBM Plex Mono", sans-serif;
+  font-family: "IBM Plex Mono", monospace;
   display: grid;
   grid-auto-rows: 1fr max-content 1fr;
   gap: 40px;
+  background-color: var(--main-color, #000028);
+  background-image: var(
+    --bg-image,
+    url(../images/cover-image-dark.png)
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .header {
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   padding: 0 10px;
-  background-image: var(--bg-image);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 .rec {
   position: absolute;
@@ -37,7 +43,7 @@
   height: 12px;
   background-color: var(--accent-color);
   border-radius: 50%;
-  filter: blur(1px);
+  box-shadow: 0 0 4px 2px var(--accent-color);
   margin-left: 7.4px;
   margin-top: 7.2px;
   top: 0;
@@ -193,8 +199,8 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 100%;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 @media (width >= 768px) {
@@ -231,7 +237,7 @@
     padding: 0px 20px;
     gap: 80px;
   }
-  .section_first {
+  .section_why {
     grid-template-columns: 1fr 2fr;
     row-gap: 0px;
   }
@@ -239,10 +245,10 @@
     max-width: 236px;
     grid-row-start: span 2;
   }
-  .section_third {
+  .section_how {
     grid-template-columns: 1fr 2fr;
   }
-  .section_third .section__list {
+  .section_how .section__list {
     display: grid;
     grid-template-rows: 1fr max-content;
     gap: 20px;
@@ -308,18 +314,18 @@
   .header__text {
     margin-block-end: 120px;
   }
-  .section_first {
+  .section_why {
     gap: 13px;
     row-gap: 0;
   }
   .section__title {
     max-width: 315px;
   }
-  .section_second .section__list {
+  .section_what .section__list {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
   }
-  .section_third {
+  .section_how {
     column-gap: 10px;
   }
 }
