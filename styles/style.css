@@ -202,6 +202,9 @@
   block-size: 100vh;
   min-block-size: 668px;
 }
+.section_img{
+  gap:8px;
+}
 
 @media (width >= 768px) {
   .page {
@@ -291,6 +294,10 @@
   .rec {
   margin-block-start: 20px;
   margin-inline-end: 48px;
+  
+}
+.section_img{
+  gap:20px;
 }
 }
 
