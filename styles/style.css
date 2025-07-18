@@ -20,7 +20,8 @@
   grid-template-rows: 1fr min-content 1fr;
   padding: 0 10px;
   block-size: 100vh;
-  min-block-size: 668px;
+ 
+
 }
 .rec {
   position: absolute;
@@ -208,11 +209,11 @@
 
 @media (width >= 768px) {
   .page {
-    gap: 72px;
+    gap: 60px;
   }
   .decorated-zone::before {
     margin-inline-start: 20px;
-    margin-block-end: 8px;
+    margin-block-end:18px;
   }
   .decorated-zone::after {
     margin-block-start: 20px;
@@ -222,12 +223,12 @@
     padding: 0 20px 0 0;
   }
   .header__theme-menu {
-    margin-block-start: 192px;
+    margin-block-start: 180px;
   }
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     justify-self: start;
-    margin-block-start: 175px;
+    margin-block-start: 165px;
     margin-block-end: 160px;
   }
 
@@ -280,16 +281,16 @@
   .street {
     grid-column: 2 / 4;
   }
-  .footer .header__title {
+  /* .footer .header__title {
     margin-inline-end: 0vw;
     margin-block-end: 1.5vw;
     margin-block-start: 0px;
-  }
+  } */
   .footer.decorated-zone::before {
     margin-block-end: 21px;
   }
   .footer.decorated-zone::after {
-    margin-block-start: 8px;
+    margin-block-start: 18px;
   }
   .rec {
   margin-block-start: 20px;
