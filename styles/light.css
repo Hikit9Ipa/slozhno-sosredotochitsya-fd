@@ -15,7 +15,7 @@
   --bg-image: url(../images/cover-image-light.png);
   --accent-color-button: #32312d66;
   --title-accent-color: #353430;
-  --main-color:#fff1f7;
+  --main-color:#000028;
 }
 
 .theme-light .page .rec {
@@ -30,7 +30,7 @@
     --bg-image: url(../images/cover-image-light.png);
     --accent-color-button: #32312d66;
     --title-accent-color: #353430;
-    --main-color:#fff1f7;
+    --main-color:#000028;
   }
 
   .rec {
